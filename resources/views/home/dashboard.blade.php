@@ -6,9 +6,9 @@
 @section('content')
 
     <div class="card w-100">
-        <h1>Bienvenido, User</h1>
+        <h1>Bienvenido, {{$user->nombre}}</h1>
         <br>
-        <div>
+        <div class="card-body">
             <form class="form" id="register" action="{{ route('logout') }}" method="POST">
                 @csrf
                 @method('POST')

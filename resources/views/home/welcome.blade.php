@@ -32,7 +32,13 @@
             </nav>
             <nav class="navbar bg-body-tertiary">
                 <div class="container-fluid">
-                    <a class="navbar-brand navbar-link" href="{{ route('login') }}">Login</a>
+                    <a class="navbar-brand navbar-link" href="{{ route('login') }}">
+                        @if(Auth::check())
+                            Dashboard
+                        @else
+                            Login
+                        @endif
+                    </a>
                 </div>
             </nav>
         </div>
