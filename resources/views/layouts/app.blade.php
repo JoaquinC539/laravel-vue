@@ -12,7 +12,7 @@
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
-    @vite(['resources/js/app.js','resources/css/app.css'])
+    {{-- @vite(['resources/js/app.js','resouces/css/app.css']) --}}
 </head>
 
 <body class="bg-dark dark">

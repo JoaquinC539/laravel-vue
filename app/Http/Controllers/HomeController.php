@@ -20,10 +20,11 @@ class HomeController extends Controller
     }
     public function dashboard(Request $request)
     {
-        
+        $user = auth()->user();
         $successMessage = $request->session()->get('success');
         $errorMessage = $request->session()->get('error');
         return view('home.dashboard', [
+            'user' => $user,
             'successMessage' => $successMessage,
             'errorMessage' => $errorMessage
         ]);

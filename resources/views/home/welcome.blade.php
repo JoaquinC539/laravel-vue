@@ -21,14 +21,20 @@
             </ul>
             <p>
             <h2>Routes to the other dummy models: </h2>
+            </p>
             <nav class="navbar bg-body-tertiary">
                 <div class="container-fluid">
-                    <a class="navbar-brand navbar-link" href="{{ route('dashboard') }}">Dashboard</a>
-                    
+                    <a class="navbar-brand navbar-link" href="{{ route('vendedor.index') }}">Vendedores</a>
+                    <a class="navbar-brand navbar-link" href="{{ route('proveedor.index') }}">Proveedores</a>
+                    <a class="navbar-brand navbar-link" href="{{ route('producto.index') }}">Productos</a>
+                    <a class="navbar-brand navbar-link" href="{{ route('register') }}">Register</a>
                 </div>
             </nav>
-            </p>
-            
+            <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand navbar-link" href="{{ route('login') }}">Login</a>
+                </div>
+            </nav>
         </div>
         <br>
         @if (!empty($successMessage))
