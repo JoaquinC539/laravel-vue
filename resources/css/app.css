@@ -63,8 +63,8 @@ tr,td{
 .card{
     min-height: 40rem !important;
 }
-.home{
-    color: aliceblue;
+.home-button{
+    color:rgb(34, 33, 33);
 }
 .navbar-link{
     color: #0000eeaf !important;
@@ -82,4 +82,14 @@ tr,td{
 .alert-custom{
     color: aliceblue;
     font-size: 1.3em;
+}
+.container{
+    max-width: 1000px !important;
+    margin-right: 1em !important;
+    margin-left: 1em !important;
+}
+.action-btn{
+    margin: 0.3em;
+    padding: 2px;
+    
 }

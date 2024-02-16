@@ -7,18 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Mi aplicación')</title>
     <link rel="stylesheet" href="{{ asset('resources/css/app.css') }}">
+    {{-- <link rel="stylesheet" href="resource/css/app.css"> --}}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
         integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
-    @vite(['resources/js/app.js','resouces/css/app.css'])
+    <link rel="stylesheet" href= "{{asset('public/build/assets/app-lhA9k1qk.css')}}">
 </head>
 
 <body class="bg-dark dark">
-    <div class="container container-custom" style="max-width: 1500px;">
-        <h1><a href="/" class="home">Home</a></h1>
-        @yield('content')
+    <p hidden disabled> vite(['resources/js/app.js','resources/css/app.css'])</p>
+    @csrf
+    <div class=" container-custom" style="max-width: 1500px;">
+        <div class="row justify-content-center">
+            <div class="card">
+                <h1><a href="/" class="home-button">Home</a></h1>
+                @yield('content')
+            </div>
+        </div>
+        
     </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.5/axios.min.js"
         integrity="sha512-TjBzDQIDnc6pWyeM1bhMnDxtWH0QpOXMcVooglXrali/Tj7W569/wd4E8EDjk1CwOAOPSJon1VfcEt1BI4xIrA=="
@@ -30,6 +38,7 @@
         integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
+    <script type="module" src="{{ asset('public/build/assets/app-7_I3f9dv.js') }}"></script>
     <script>
         const csrfToken = document.querySelector('input[name="_token"]').getAttribute('value');
         $(document).ready(function() {
